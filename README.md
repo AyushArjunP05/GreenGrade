@@ -1,10 +1,12 @@
 GreenGrade 🌿
+
 Building Sustainability Index --- A Rule-Based Urban Sustainability Platform
 GreenGrade is a web-based sustainability assessment prototype designed
 to help people looking for rental houses and apartments compare building
 sustainability, while helping cities understand building performance and
 encouraging property owners to adopt environmentally responsible
 practices.
+
 The platform evaluates buildings using transparent, rule-based scoring
 across electricity consumption, water usage, neighbourhood green cover,
 surrounding air quality, and waste management.
@@ -37,6 +39,7 @@ government databases
 - Future Scope
 - Contributing
 - License
+  
 🌍 The Problem
 Buildings contribute to urban environmental pressure through electricity
 demand, water consumption, waste generation, and the surrounding built
@@ -45,6 +48,7 @@ However, building owners and residents may not have a simple,
 consolidated way to understand their building's sustainability
 performance or identify which changes could make the greatest
 difference.
+
 Common challenges include:
 - High electricity consumption caused by inefficient lighting,
   cooling, and equipment.
@@ -58,6 +62,7 @@ identify priorities and measure progress. People searching for rental
 housing may also have little accessible information to compare the
 environmental performance of different buildings before choosing where
 to live.
+
 💡 Our Solution
 GreenGrade brings several sustainability indicators into one platform
 and presents them as a building sustainability score.
@@ -72,6 +77,7 @@ The system provides:
 7. A transparent scoring approach that can explain why a score changes.
 The current prototype uses predefined rules rather than AI/ML models.
 This makes its scoring logic easier to inspect, explain, and test.
+
 👥 Who GreenGrade Helps
 1. People looking to rent houses and apartments
 Prospective tenants can compare building sustainability grades and
@@ -101,7 +107,8 @@ Transparent grades → informed rental choices → incentive for owners to
 improve → better building performance → greener neighbourhoods.
 This is the intended impact of the platform, not a guaranteed outcome:
 rental decisions depend on many factors, and improvements must be
-measured and verified.
+measured and verified
+.
 🎯 Project Objectives
 - Encourage energy-efficient building operation.
 - Promote responsible water consumption.
@@ -115,6 +122,7 @@ measured and verified.
 - Support transparent, consistent environmental assessment.
 - Provide a foundation for future city-level sustainability
   dashboards.
+  
 🏢 How GreenGrade Helps Building Owners
 GreenGrade is intended to turn sustainability data into practical
 recommendations.
@@ -133,6 +141,7 @@ How this can improve the score: The electricity score is based on
 energy performance relative to a reference value for the building type.
 Lower energy use for the same built-up floor area can improve the
 electricity performance ratio and may increase the corresponding points.
+
 2. Reduce unnecessary water consumption
 Possible actions:
 - Repair leaking taps, pipes, and flush systems.
@@ -146,6 +155,7 @@ to the appropriate reference value can improve the water score.
 Water use must be compared using a meaningful unit, such as litres per
 person per day for residential buildings or an appropriate unit for
 other building types.
+
 3. Support neighbourhood greenery
 Possible actions:
 - Maintain existing trees and green spaces.
@@ -158,6 +168,7 @@ neighbourhood-level green cover. Individual owners can contribute to
 greener surroundings, but their personal score may not increase
 immediately from planting alone. The area-level data must be updated
 using a consistent, documented method.
+
 4. Support better air quality
 Possible actions:
 - Maintain vehicles and generators properly.
@@ -170,6 +181,7 @@ recorded AQI for the surrounding area. An individual owner cannot
 directly control the neighbourhood AQI, and their score should not
 change solely because of an unverified claim. Area data must come from a
 suitable monitoring source.
+
 5. Improve waste management
 Possible actions:
 - Separate wet waste, dry recyclables, and other locally required
@@ -187,6 +199,7 @@ inspections.
 Wet waste should not automatically be treated as biodegradable without
 considering the material, contamination, and appropriate processing
 method.
+
 📊 Scoring System
 GreenGrade uses a proposed prototype score with five categories and a
 maximum of 100 points.
@@ -208,6 +221,7 @@ maximum of 100 points.
                                                      findings
   Total                                  100 Combined
                                                  sustainability score
+                                                 
 Electricity performance
 Annual Energy Performance Index (EPI) can be calculated as:
 EPI = Annual electricity consumption (kWh) / Built-up floor area (m²)
@@ -252,6 +266,7 @@ should be validated against appropriate local regulations, technical
 standards, and reliable datasets.
 Missing information should be marked as unassessed rather than
 automatically treated as perfect performance.
+
 ✨ Features
 Building exploration
 - Search for buildings.
@@ -282,6 +297,7 @@ Rule-based scoring
 Persistent storage
 - Store prototype data in SQLite.
 - Retain supported records across application restarts.
+- 
 🛠️ Admin Data Entry
 GreenGrade requires appropriate input data for meaningful scoring.
 Depending on the implemented version, administrative utility records can
@@ -318,6 +334,7 @@ Waste inspection data
 Data quality matters: Incorrect inputs can produce misleading
 scores. Changes should be traceable, and the data collection method
 should be consistent.
+
 💻 Technology Stack
   Technology         Purpose
   React              Frontend user interface
@@ -328,6 +345,7 @@ should be consistent.
   JavaScript / JSX   Application logic and interface
   CSS                Interface styling
   Git and GitHub     Version control and source-code hosting
+  
 📁 Project Structure
 GreenGrade/
 ├── client/
@@ -344,20 +362,9 @@ GreenGrade/
 ├── package.json
 ├── package-lock.json
 └── README.md
+
 The exact contents may vary slightly as the project develops.
-🚀 Installation and Setup
-Requirements
-- Node.js 20 or later.
-- npm.
-- Git (optional, for version control).
-1. Clone the repository
-git clone https://github.com/AyushArjunP05/GreenGrade.git
-cd GreenGrade
-2. Install dependencies
-npm install
-npm run install:all
-3. Start the application
-npm run dev
+
 🔐 Demo Accounts
 The prototype provides the following demonstration accounts:
   Role                  Email                          Password
@@ -367,6 +374,7 @@ The prototype provides the following demonstration accounts:
 These are demonstration credentials only. The prototype's authentication
 is not production-secure and must not be used to protect real personal
 or government data.
+
 📈 Example Improvement Plan
 Imagine a residential building whose electricity score is lower than
 expected.
@@ -385,6 +393,7 @@ improves. However, the size of the improvement depends on the scoring
 thresholds, the category weights, and the quality of the input data.
 Some components, such as neighbourhood AQI and green cover, depend on
 area-level conditions rather than the actions of one owner.
+
 ⚠️ Limitations
 - All demonstration building records are fictional.
 - The prototype is not connected to live government systems.
@@ -406,6 +415,7 @@ area-level conditions rather than the actions of one owner.
   information and a way to challenge incorrect data, so the platform
   encourages improvement rather than unfairly damaging a property's
   reputation.
+  
 Before production use, the platform would need secure authentication,
 server-side role-based authorization, stronger validation, backups,
 verified data integrations, priv

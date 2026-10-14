@@ -370,19 +370,6 @@ npm run install:all
 npm run dev
 ```
 
-### 4. Open the application
-
-Frontend:
-
-http://localhost:5173
-
-Backend health endpoint:
-
-http://localhost:3001/api/health
-
-If the root scripts are unavailable in a particular version, follow the instructions in the project’s package files or run the client and server separately.
-
----
 
 ## 🔐 Demo Accounts
 

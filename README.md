@@ -408,4 +408,4 @@ area-level conditions rather than the actions of one owner.
   reputation.
 Before production use, the platform would need secure authentication,
 server-side role-based authorization, stronger validation, backups,
-verified data integrations, privacy safeguards,
+verified data integrations, priv

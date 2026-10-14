@@ -335,18 +335,25 @@ Data quality matters: Incorrect inputs can produce misleading
 scores. Changes should be traceable, and the data collection method
 should be consistent.
 
-💻 Technology Stack
-  Technology         Purpose
-  React              Frontend user interface
-  Vite               Frontend development server and build tool
-  Node.js            Backend runtime
-  Express            Backend API
-  SQLite             Local database persistence
-  JavaScript / JSX   Application logic and interface
-  CSS                Interface styling
-  Git and GitHub     Version control and source-code hosting
-  
-📁 Project Structure
+
+## 💻 Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| React | Frontend user interface |
+| Vite | Frontend development and build tool |
+| Node.js | Backend runtime |
+| Express | Backend API |
+| SQLite | Local database persistence |
+| JavaScript / JSX | Application logic and interface |
+| CSS | Interface styling |
+| Git and GitHub | Version control and source-code hosting |
+
+
+
+## 📁 Project Structure
+
+```text
 GreenGrade/
 ├── client/
 │   ├── src/
@@ -362,8 +369,8 @@ GreenGrade/
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
 
-The exact contents may vary slightly as the project develops.
 
 🔐 Demo Accounts
 The prototype provides the following demonstration accounts:
